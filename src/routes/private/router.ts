@@ -19,4 +19,4 @@ private_router.post("/test",async (c) => {
     return c.json(payload)
 })
 
-export {private_router}
+export default private_router

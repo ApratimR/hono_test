@@ -1,5 +1,7 @@
 import { Hono } from "hono";
 import { publicMiddleware } from "./middleware";
+import { sign } from "hono/jwt";
+import { env } from "hono/adapter";
 
 const public_router = new Hono()
 
@@ -19,4 +21,13 @@ public_router.post("/test",async (c) => {
     return c.json(payload)
 })
 
-export {public_router}
+public_router.post("/signin",async (c) => {
+
+    // const {JWT_SECRET} = env<{JWT_SECRET:string}>(c)
+
+    // const token = await sign({"role":"user"},JWT_SECRET)
+
+    // NEED WORK HEER
+})
+
+export default public_router
