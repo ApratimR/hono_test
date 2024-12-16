@@ -23,11 +23,11 @@ public_router.post("/test",async (c) => {
 
 public_router.post("/signin",async (c) => {
 
-    // const {JWT_SECRET} = env<{JWT_SECRET:string}>(c)
+    const {JWT_SECRET} = env<{JWT_SECRET:string}>(c)
 
-    // const token = await sign({"role":"user"},JWT_SECRET)
+    const token = await sign({"role":"user"},JWT_SECRET)
 
-    // NEED WORK HEER
+    return c.json({"token":token})
 })
 
 export default public_router

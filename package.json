@@ -5,10 +5,12 @@
     "deploy": "wrangler deploy --minify"
   },
   "dependencies": {
-    "hono": "^4.6.11"
+    "hono": "^4.6.11",
+    "mongoose": "^8.9.1"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20241112.0",
+    "@types/node": "^22.10.2",
     "wrangler": "^3.88.0"
   }
 }
