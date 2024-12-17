@@ -6,11 +6,10 @@
   },
   "dependencies": {
     "hono": "^4.6.11",
-    "mongoose": "^8.9.1"
+    "postgres": "^3.4.5"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20241112.0",
-    "@types/node": "^22.10.2",
+    "@cloudflare/workers-types": "^4.20241216.0",
     "wrangler": "^3.88.0"
   }
 }
